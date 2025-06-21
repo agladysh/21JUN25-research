@@ -1,0 +1,6 @@
+# Requirements for LLM Extraction Tools
+
+unstructured
+PyYAML
+pdfminer.six
+# Add other dependencies as needed
