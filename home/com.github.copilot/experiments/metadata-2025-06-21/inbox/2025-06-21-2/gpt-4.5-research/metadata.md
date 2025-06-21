@@ -1,0 +1,6 @@
+# Metadata for /inbox/2025-06-21-2/gpt-4.5-research
+
+- Files: NOTE.md, Review of Prior Research Notes (21JUN25).pdf
+- Description: Notes and a PDF reviewing prior research for the GPT-4.5 research thread.
+- Date: 2025-06-21
+- Status: Unprocessed
