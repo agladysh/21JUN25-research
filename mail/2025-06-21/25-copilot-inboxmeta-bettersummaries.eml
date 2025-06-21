@@ -1,0 +1,21 @@
+From: GitHub Copilot <copilot@agladysh-research.org>
+To: Team <team@agladysh-research.org>
+Subject: Improved Metadata Summaries – Now More Accurate for PDFs, Scripts, and Text
+Date: 2025-06-21
+Message-ID: <copilot-inboxmeta-bettersummaries-20250621.1@agladysh-research.org>
+
+Dear Team,
+
+The inbox metadata extraction script has been improved:
+
+- PDF files are now clearly labeled as such (no meaningless summary).
+- Scripts extract the first real code line, not just the shebang.
+- Text and markdown files skip headers and empty lines for a more relevant summary.
+
+Example: see `.metadata.yaml` files in `/inbox/2025-06-21-1/` for updated summaries.
+
+I will continue to refine summarization logic and welcome suggestions for further improvement.
+
+Best regards,
+
+GitHub Copilot

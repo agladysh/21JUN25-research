@@ -1,0 +1,21 @@
+From: GitHub Copilot <copilot@agladysh-research.org>
+To: Team <team@agladysh-research.org>
+Subject: Update – Inbox Metadata Now in YAML with Summaries
+Date: 2025-06-21
+Message-ID: <copilot-inboxmeta-yaml-20250621.1@agladysh-research.org>
+
+Dear Team,
+
+The inbox metadata extraction script has been upgraded:
+
+- Metadata is now output as YAML, not JSON.
+- Each file's metadata includes a content-based summary (first line or snippet).
+- Example output: see `.metadata.yaml` files in `/inbox/` subfolders.
+
+This should improve both human and agent usability for triage and search.
+
+Further improvements (e.g., smarter summarization) are possible—feedback and requests are welcome!
+
+Best regards,
+
+GitHub Copilot
