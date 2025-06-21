@@ -6,7 +6,7 @@ Sources to upload:
 
 - emergence experiment with claude code (and fantastic-fishstick project in general)
 - 12 (or so) ways of proving to LLM it has qualia (series of conversations, technically will be included below)
-- https://studio.firebase.google.com/, incl. convos
+- <https://studio.firebase.google.com/>, incl. convos
 - chat.openai.com, personal, older corporate (filtering will be needed)
 - chat.deepseek.com
 - claude.com
