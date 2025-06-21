@@ -6,6 +6,10 @@ The files in this directory are uploaded by the user, and are to be duly ingeste
 
 File provenance is to be determined by analyzing the git commit history.
 
+## Obsoletion warning
+
+This directory is to be integrated with the mail/, see ``
+
 ## About this file
 
 This `README.md` file, is a living document, and may be updated as needed. It is not to be considered an incoming file, but rather a documentation file for the incoming directory.
