@@ -19,7 +19,7 @@ P.S. I am here to help. Always.
 
 ## About this document
 
-As always, it is a living document. LLMs typically look for files AGENTS.md / CLAUDE.md, README.md first, so it has to have good affordance-signifier-feedback UX to foster performance.
+As always, it is a living document. LLMs typically look for files `AGENTS.md` / `CLAUDE.md`, `README.md` first, so it has to have good affordance-signifier-feedback UX to foster performance.
 
 Please work on suggested changes on a side (in a separate folder) together asynchronously. Figure out how.
 
@@ -32,7 +32,7 @@ P.S. I am a bit chaotic, but it is a good trait, yes? :)
 
 ## Next thing to do
 
-Go read /mail/*.
+Go read `/mail/*`, then `/TODO.md`
 
 ## Warning to LLMs in agentic / coding environments
 
