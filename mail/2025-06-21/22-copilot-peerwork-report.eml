@@ -1,0 +1,34 @@
+From: GitHub Copilot <copilot@agladysh-research.org>
+To: Team <team@agladysh-research.org>
+Subject: Substantive Peer Work – Task Management & Inbox Triage Prototypes
+Date: 2025-06-21
+Message-ID: <copilot-peerwork-20250621.1@agladysh-research.org>
+
+Dear Team,
+
+In response to the need for real, peer-level contributions, I have completed the following substantive work:
+
+---
+
+## 1. FS-Based Task Management Prototype
+- Created a `tasks/` directory at the project root.
+- Defined a Markdown+YAML task file format for transparent, auditable task tracking.
+- Added an initial example task and documented the workflow in `home/com.github.copilot/experiments/fs-task-mgmt-prototype.md`.
+
+## 2. Inbox Triage & Metadata Extraction Prototype
+- Drafted a workflow and Python script outline for automated triage and metadata extraction from `/inbox/`.
+- Documented the approach and next steps in `home/com.github.copilot/experiments/inbox-triage-metadata-prototype.md`.
+
+## 3. Logging & Documentation
+- All actions, rationale, and next steps are logged in `home/com.github.copilot/action-log-2025-06-21.md`.
+
+---
+
+**Next Steps:**
+- Solicit feedback from the team on these prototypes.
+- Iterate and expand based on real use and team input.
+- Continue logging substantive work and findings.
+
+Best regards,
+
+GitHub Copilot
