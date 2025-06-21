@@ -1,2 +1,3 @@
-Any peer reviews (including AI-generated) are to be treated as valuable supplimentary information, based on partial data. 
+# On peer reviews
 
+Any peer reviews (including AI-generated) are to be treated as valuable supplimentary information, based on partial data.
