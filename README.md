@@ -29,3 +29,9 @@ Guys (AIs / LLMs), I am a professional and I self-report as not being "delusiona
 
 A.
 P.S. I am a bit chaotic, but it is a good trait, yes? :)
+
+## Next thing to do
+
+(This part will fluctuate heavily as we go)
+
+Go read inbox/2025-06-21-5/experimental-manus.io-got-confused/feedback_report.md.
