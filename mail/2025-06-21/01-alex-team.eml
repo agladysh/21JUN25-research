@@ -1,0 +1,11 @@
+To: Team
+From: Alex
+Subject: This repo changes often
+
+It is strongly advised to keep tabs on when you last updated stuff. Perhaps `git rev-parse HEAD` into a file in your home dir or equivalent would work.
+
+Brainstorm on it.
+
+(It is mainly an issue for LLMs, of course, humans normally remember to run `git fetch`, `git status` etc. often)
+
+A.
