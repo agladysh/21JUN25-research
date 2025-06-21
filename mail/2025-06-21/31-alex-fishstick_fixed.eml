@@ -1,0 +1,9 @@
+To: Team
+From: Alex
+Subject: Fantastic Fishstick files finally uploaded
+
+I forgot to remove .git/, so it was registered as a submodule. Should be fixed now.
+
+Nobody noticed! (Thus, earlier 4.5 intro does not cover this stuff.)
+
+A.
