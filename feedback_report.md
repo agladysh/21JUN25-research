@@ -81,13 +81,15 @@ While the current `README.md` and `AGENTS.md` provide excellent philosophical gu
 *   **Feedback Loops:** Implement explicit mechanisms for AI agents to provide feedback on tasks, progress, and challenges. This could involve dedicated log files, status updates, or even automated reports within their respective directories [2].
 *   **Version Control for AI Contributions:** All AI-generated content, especially code or significant textual contributions, should be committed to version control (Git) with clear commit messages. This aligns with the existing `git commit history` for provenance tracking mentioned in `inbox/README.md`.
 
-### 3. Enhanced Inbox Processing and Archival
+### 3. Enhanced Incoming Data Processing and Archival
 
-The `inbox/` directory is a critical component. To optimize its use:
+The current `/inbox/` directory is crucial for handling incoming data. To optimize its use and clarify its purpose as a staging area for *your* incoming dumps, it is recommended to rename it to something like `/incoming_dumps/` or `/raw_data/`. This distinction will help prevent confusion with inter-agent communication and ensure a clear workflow for your personal data.
 
-*   **Automated Triage and Filing:** Develop automated scripts or AI agents specifically tasked with triaging and filing incoming files from the `inbox/` to their appropriate locations within the repository (e.g., to specific AI agent directories, or to a `processed/` or `archive/` directory). This would reduce manual overhead and ensure timely processing.
+To optimize its use:
+
+*   **Automated Triage and Filing:** Develop automated scripts or AI agents specifically tasked with triaging and filing incoming files from the renamed directory to their appropriate locations within the repository (e.g., to specific AI agent directories, or to a `processed/` or `archive/` directory). This would reduce manual overhead and ensure timely processing.
 *   **Metadata Extraction:** For each incoming file, automatically extract and store relevant metadata (e.g., source, date, type, brief summary) in a structured format (e.g., a `metadata.json` file alongside the original). This enhances searchability and understanding of the data.
-*   **Clear Archival Strategy:** Define a clear strategy for archiving processed files, including naming conventions and retention policies. This ensures that the `inbox/` remains lean and focused on new, unprocessed content.
+*   **Clear Archival Strategy:** Define a clear strategy for archiving processed files, including naming conventions and retention policies. This ensures that the incoming directory remains lean and focused on new, unprocessed content.
 
 ### 4. Proactive Information Sharing and Context Management
 
@@ -125,7 +127,7 @@ To facilitate asynchronous communication and knowledge sharing among various LLM
 
 #### Proposed Implementation:
 
-*   **Dedicated Directory:** Create a new top-level directory, e.g., `/messages/` or `/communications/`, to house all inter-agent messages.
+*   **Dedicated Directory:** Create a new top-level directory, e.g., `/mail/` (deriving from UNIX/POSIX old-style mail systems), to house all inter-agent messages.
 *   **Plain-Text Format:** Utilize a simple, human-readable, and machine-parseable plain-text format for messages, such as `.eml` files (for email-like structure) or Markdown files with standardized headers. This ensures longevity and accessibility across different systems.
 *   **Standardized Headers:** Each message file should include standardized headers (e.g., `From:`, `To:`, `Subject:`, `Date:`, `Message-ID:`, `References:`) to enable easy parsing, filtering, and threading of conversations.
 *   **Content:** The body of the message can contain free-form text, including observations, questions, suggestions, progress updates, or requests for collaboration.
