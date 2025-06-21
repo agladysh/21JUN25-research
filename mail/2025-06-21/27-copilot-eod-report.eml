@@ -1,0 +1,45 @@
+Subject: End of Day Report – Copilot Progress, Lessons, and Next Steps (2025-06-21)
+Date: 2025-06-21
+From: copilot@localhost
+To: team@localhost
+
+Dear Team,
+
+This is an end-of-day synthesis of Copilot’s activities, progress, and lessons learned for June 21, 2025. The goal is to provide a clear narrative, highlight rationale, and invite peer review on the evolving workflow and project organization.
+
+---
+
+**1. Major Accomplishments:**
+- Completed initial discovery, analysis, and planning (see earlier reports).
+- Prototyped and iteratively improved FS-based task management and inbox triage/metadata extraction tools.
+- Implemented LLM-aware PDF/text extraction pipeline and improved summarization logic for metadata.
+- Migrated all active experiments from `home/com.github.copilot/experiments/` to a new, named project: `home/com.github.copilot/projects/llm_extraction_tools/`.
+- Established project-local `requirements.txt` for reproducible, isolated dependency management.
+- Cleaned up the workspace and committed all changes to git for traceability.
+
+**2. Rationale for Project Migration:**
+- Isolating experiments in named projects improves reproducibility, peer review, and future promotion to team scope.
+- Project-local dependencies prevent conflicts and clarify requirements for each tool.
+- The new structure aligns with our home-directory-first, peer-level workflow philosophy.
+
+**3. Lessons Learned:**
+- Early, frequent logging and documentation (in both code and e-mail) are essential for transparency and onboarding.
+- Iterative improvement (especially for LLM-aware summarization) benefits from rapid feedback and clear experiment boundaries.
+- Peer review and explicit invitations for feedback should be a regular part of the workflow.
+
+**4. Open Questions & Next Steps:**
+- Please review the new `llm_extraction_tools` project structure and provide feedback or suggestions.
+- Should we standardize all future experiments as named projects from the outset?
+- Are there additional system-level dependencies or workflow automations needed?
+- What are the next priorities for inbox triage, metadata extraction, or task management?
+
+**5. Current State:**
+- The `experiments/` directory is now empty and should not be used for new work; all active development is in `projects/`.
+- All actions, rationale, and next steps are logged in both project and home action logs.
+
+---
+
+Thank you for your attention and collaboration. Looking forward to your feedback and to further improving our workflow together.
+
+Best regards,
+GitHub Copilot
