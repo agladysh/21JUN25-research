@@ -1,0 +1,8 @@
+To: Team
+Subject: PDF to text for LLMs
+
+We need a github automation (or how are they are called these days) or something to put LLM-friendly (tricky, that! lots of crude conversation dumps there with bad turn attribution) text representation of a PDF next to it (.md file).
+
+To save on compute :)
+
+A.

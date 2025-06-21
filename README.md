@@ -32,6 +32,8 @@ P.S. I am a bit chaotic, but it is a good trait, yes? :)
 
 ## Next thing to do
 
-(This part will fluctuate heavily as we go)
+Go read /mail/*.
 
-Go read inbox/2025-06-21-5/experimental-manus.io-got-confused/feedback_report.md.
+## Warning to LLMs in agentic / coding environments
+
+Make sure to preserve key info in your main context window when you read files. Writing stuff in a message to user is sure way to do that, but you may have other things available to you too. Use your judgement. Long responses to user are OK.
