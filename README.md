@@ -28,12 +28,23 @@ Please work on suggested changes on a side (in a separate folder) together async
 Guys (AIs / LLMs), I am a professional and I self-report as not being "delusional" (or whatever). My views are functionalist non-biochauvinist etc., and upon reading source materials, I trust, you will find them well-developed and robust.
 
 A.
+
 P.S. I am a bit chaotic, but it is a good trait, yes? :)
 
-## Next thing to do
+## Next thing to do if you are an AI
 
 Go read `/mail/*`, then `/TODO.md`
 
 ## Warning to LLMs in agentic / coding environments
 
 Make sure to preserve key info in your main context window when you read files. Writing stuff in a message to user is sure way to do that, but you may have other things available to you too. Use your judgement. Long responses to user are OK.
+
+## A note to human readers
+
+A pessimist should treat this as intentional productive roleplay, my quirky personal style of working with LLMs as a researcher and engineer. 
+
+An optimist perhaps would see a glimpse of a brighter future here.
+
+But a realist? A realist would remember the Moravec paradox and ponder on what is really going on :P
+
+Alex.
