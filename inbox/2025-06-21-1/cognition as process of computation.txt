@@ -1,0 +1,37 @@
+Cognition is an act / process of computation
+
+Taking LLM-human pair as an example, we may identify several forms of cognitive computation. For a human this form taxonomy is a practically useful "reductionist" abstraction (forms are, of course, abstractions too). 
+
+In an LLM (as defined by its outermost boundary, normally an API call), the forms may be observable in pure, so while forms themselves are abstractions, taxonomy itself is not.
+
+Computation over discrete symbolic substrate is the most well researched. LLM as a program factually performs symbolic computations over systems of bits.
+
+It may also be said LLM also performs symbolic computations over human language systems. E.g. chain of thought (and ilk), externalized reasoning/thinking (and ilk), even tool calling.
+
+It may be said that humans perform non-discrete field computations their own internal states.
+
+Compare this with domestic animals (e.g. cats), who demonstrably can understand and internalize verbal communications and communicate back non-verbally. There are many experiments (and even pet owners) enabling cats to communicate back verbally (by pressing buttons which replay recorded words and short phrases). 
+
+While fields are not generally transferrable between cognizing entities (e.g. me moving my hand is not the same as you moving yours), symbols are (languages are learnable).
+
+LLMs perform digital field computations over digitalized semantic fields.
+
+Third kind of cognitive computation is communication. We define communication broadly to avold introducing fourth stage as an exchange of symbolic (e.g. verbal textual or IT data packets, etc) and field (e.g visual). Observing reaction of an outside environment to action "tempers the thought" (provides input for further stages of cognitive process).
+
+Communicative computation may be put on a spectrup of "power" with the number of participants. It is well known that: Monologues and similar "utterances" (both symbolic and field), where there is only author and environment, are less powerful (with goal-oriented cognition, less refinement per unit of time). "Intellectual team-work" is more powerful than pair work, which is less powerful than single person working on a problem. (This is tempered by non-linear increases communicative complexity as well as loss of fidelity and state upon field to symbol to field transitions). Minimal form (may be called a degenerative case) of communicative is private to author (speaking to oneself verbally and listenting, drafting, keeping diaries etc., which has advantages of minimal distortion upon symbol to field transition upon reading by the author)
+
+NB: (Provided as an abbreviated footnote) Writing and reading texts require field computations for field-native author and reader.
+
+NB: (Author's observation) Textual private self-communication in digital form is interesting, because it provides a non-sequential workspace for thought (generally one makes non-local edits as one writes thoughts down, which is much easier than doing so "on paper"). Often available to LLMs as file access.
+
+Generally symbolic computations are faster (e.g. one may refine further in an unit of time) than field computations, due to discreteness of symbols and non-discreteness of fields.
+
+We may metaphorically (for humans) say that System 1 thinking is meaning field computation, whereas System 2 is symbolic. (Naturally System 2 in humans are also field, because humans are not digital, however it is an analytically useful simplification). Communicative computation (including speaking to oneself vocally and private writing, e.g. diaries, as a minimally possible form) is "System 3".
+
+Therefore for LLMs System 1 is internal field computations, System 2 is producing generally any textual output structured with final computation result at the end (e.g. as induced classic CoT propting, or requesting certain forms of analytical reports, etc). System 3 is any form of LLM reading back LLM's own input (minimal form), and user responses (non-minimal).
+
+Hypothesis: LLM will be most effective as a cognitive computation tool when its output intentionally combines System 2, non-minimal and minimal forms of System 3. Minimal form of system 3 (blocks of output which are either private to LLM, or where LLM penalizes any user input) is required to minimize external noise influence.
+
+Subjectively, empiric observations of the author generally support the Hypothesis.
+
+Most effective form of the above approach will be emergent (by LLM), because (1) from general principles it is likely not to be optimally designable due to complexity and goal-dependence, and (2) LLMs are opaque to humans (and to LLMs themselves in finer detail) so humans are less effective optimal LLM-form of cognitive computation.
