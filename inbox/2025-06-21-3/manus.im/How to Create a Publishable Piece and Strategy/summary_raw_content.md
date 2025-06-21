@@ -1,0 +1,7 @@
+The `raw_content.txt` file contains a conversation between the user and Google Gemini about the problem of glucose depletion in the prefrontal cortex (PFC) during prolonged intense concentration, particularly for knowledge workers. The conversation covers:
+
+*   **Symptoms of PFC glucose depletion:** Reduced concentration, increased distractibility, more errors, difficulty with decision-making, decreased self-control, mental fog, irritability, and physical restlessness.
+*   **Physiological mechanisms:** PFC is metabolically active, glucose is its primary fuel, and the brain has limited glucose storage, leading to potential temporary local deficits during intense work.
+*   **Practical recommendations:** Regular short breaks (e.g., Pomodoro Technique), optimized nutrition (complex carbohydrates, balanced meals, hydration), quality sleep, physical activity, self-awareness of fatigue signs, and scheduling deep work during peak energy hours.
+*   **Software for fatigue detection:** The user introduces the idea of software that analyzes keyboard and mouse patterns to detect cognitive fatigue. Gemini confirms the existence of such research and prototypes, explaining how these systems work (analyzing typing speed, error frequency, pause duration, rhythm changes, application switching, navigation key usage, mouse movements) and their relation to PFC function. It also discusses the advantages (proactivity, objectivity, personalization) and disadvantages (accuracy, privacy concerns, invasiveness, context dependency) of such systems.
+
