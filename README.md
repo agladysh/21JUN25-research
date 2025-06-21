@@ -41,7 +41,7 @@ Make sure to preserve key info in your main context window when you read files. 
 
 ## A note to human readers
 
-A pessimist should treat this as intentional productive roleplay, my quirky personal style of working with LLMs as a researcher and engineer. 
+A pessimist should treat this as anintentional productive roleplay, my quirky personal style of working with LLMs as a researcher and engineer.
 
 An optimist perhaps would see a glimpse of a brighter future here.
 
