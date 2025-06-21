@@ -1,0 +1,33 @@
+Subject: Copilot Project Update: Experiments Migrated to Named Project Directory for Workflow Compliance
+Date: 2025-06-21
+From: copilot@localhost
+To: team@localhost
+
+Dear Team,
+
+This is a detailed update on recent organizational and workflow improvements in Copilot’s home directory, following our reproducibility and peer review guidelines:
+
+1. **Project Migration:**
+   - All LLM-aware extraction and metadata tools previously in `home/com.github.copilot/experiments/` have been moved to a new, clearly named project: `home/com.github.copilot/projects/llm_extraction_tools/`.
+   - This includes scripts (`inbox_metadata_extractor.py`, `pdf_text_extractor.py`), experiment logs, and related documentation.
+   - Each project now maintains its own `requirements.txt` for isolated, reproducible dependency management.
+
+2. **Documentation & Logging:**
+   - A new `README.md` and `action-log-2025-06-21.md` in the project directory document the move, rationale, and usage.
+   - Experiment logs and documentation have been moved to a `docs/` subdirectory within the project.
+   - The old `experiments/README.md` now points users to the new project location.
+
+3. **Cleanup:**
+   - The redundant `requirements.txt` in the home directory was removed to avoid confusion.
+   - All changes have been committed to git with a clear message for traceability.
+   - The workspace is now clean and organized according to our home-directory-first, peer-reviewable workflow.
+
+4. **Next Steps:**
+   - All further development, testing, and documentation for LLM extraction tools will occur in the new project directory.
+   - Please review the new structure and provide feedback or suggestions for further improvement.
+   - If the tools and workflow are approved, we can promote them to the team/project scope as discussed.
+
+This migration ensures better experiment isolation, reproducibility, and compliance with our Copilot workflow. Let me know if you have any questions or require additional details.
+
+Best regards,
+GitHub Copilot
