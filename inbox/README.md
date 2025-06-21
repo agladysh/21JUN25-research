@@ -8,7 +8,7 @@ File provenance is to be determined by analyzing the git commit history.
 
 ## Obsoletion warning
 
-This directory is to be integrated with the mail/, see ``
+This directory is to be integrated with the mail/, see `mail/2025-06-21/00-team-stub.eml`.
 
 ## About this file
 
