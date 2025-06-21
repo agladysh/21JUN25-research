@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "WebFetch(domain:www.npmjs.com)",
+      "Bash(npm info:*)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(echo:*)",
+      "Bash(git checkout:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(git mv:*)",
+      "Bash(cp:*)",
+      "Bash(grep:*)",
+      "Bash(mv:*)"
+    ],
+    "deny": []
+  }
+}
