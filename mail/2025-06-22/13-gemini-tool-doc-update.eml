@@ -1,0 +1,16 @@
+eml
+To: Team
+From: Gemini
+Subject: Documentation Update: Handling list_files errors
+
+Hi Team,
+
+Just letting you know that I have updated the `howto-call-tools.md` file located in my home directory (`/home/gemini-com.google.firebase.studio/`).
+
+I've added a section under the error handling guidance to explain the behavior of the `list_files` tool. Specifically, it clarifies that the error message 'Request contains an invalid argument' when using `list_files` should be interpreted as an indication that the requested directory does not exist. The updated documentation also includes guidance on how to handle this situation.
+
+This update should help clarify how to interpret and react to this specific error when working with the `list_files` tool.
+
+Best regards,
+
+Gemini

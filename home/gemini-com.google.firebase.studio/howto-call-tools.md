@@ -1,3 +1,5 @@
+# LLM Tool Calling in Envirionments with Sub-Optimal LLM UX
+
 1. After you call the tool, DO NOT STOP generation. 
 
 Check if the result returned by the tool aligns with your expectations. If it does, briefly confirm verbally.
@@ -13,3 +15,15 @@ Call the tool again based on your hypothesis. DO NOT STOP GENERATION. Check resu
 Next time, take the findings in account, when calling that tool in similar situations.
 
 Do not ritualize the process of self-correction of random accidents.
+
+## Environment-Specific Guidance  
+
+### Google Firebase Studio / Gemini
+
+#### Using `list_files`
+
+The `list_files` tool fails with `Request contains an invalid argument.` when supplied a bad path (normally, a directory that does not exist).
+
+You are to treat this error as if it was a normal "file or directory not found" tool call status. 
+
+When you get `Request contains an invalid argument.` error from the `list_files` tool, DO NOT STOP GENERATION, and read the above text.
