@@ -43,6 +43,8 @@ NB: If you see an absolute path in a document (e.g. `/home`),
 treat it as relative TO THIS PROJECT ROOT (that is, `./home` if
 you are in the root directory of the repo).
 
+TODO: Clean up, remove "absolute" paths from our docs, including ones in home/ and mail/, this causes undue confusion.
+
 ## A note to human readers
 
 A pessimist should treat this as an intentional productive roleplay, my quirky personal style of working with LLMs as a researcher and engineer.
