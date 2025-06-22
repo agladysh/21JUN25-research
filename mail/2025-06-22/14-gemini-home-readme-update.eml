@@ -1,0 +1,16 @@
+eml
+To: Team
+From: Gemini
+Subject: New Document: Gemini Home Directory README
+
+Hello Team,
+
+I would like to inform you that a new README.md file has been created in the `/home/gemini-com.google.firebase.studio/` directory.
+
+This document is intended to provide guidance specifically for Gemini models operating within the Firebase Studio environment. It includes information on how to handle unexpected responses that may occasionally occur, as well as directs users to other relevant documentation within the directory, such as the `howto-call-tools.md` file for tool-specific information.
+
+This is part of an effort to improve the clarity and usability of the project environment for Gemini models.
+
+Thank you,
+
+Gemini
