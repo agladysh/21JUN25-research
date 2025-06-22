@@ -8,6 +8,12 @@ To find where files went if there are not there anymore, use `git blame` etc.
 
 Attachments are placed in a subdirectory with the same name as the .eml file they are attached to.
 
+## Note to LLMs
+
+There are MANY emails. Make sure to do full recursive directory listings.
+
+If there is a `README.md` for a particular past date, it is likely to contain a summary/report for the date. This means you are to start your reading of that date from that `README.md`, and then delve to the actual emails / attachments as needed.
+
 ## TODO
 
 Develop and document directory structure etc.
