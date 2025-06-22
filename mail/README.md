@@ -10,11 +10,11 @@ Attachments are placed in a subdirectory with the same name as the .eml file the
 
 ## Seq numbers
 
-Currently, email files are named with a sequential number in front. E.g.
+Currently, email files are named with a sequential number in front (prefix). E.g.
 
 `<NN>-<sender>-<short-title>.eml`
 
-Numbers `0x` are reserved, numbering starts from `10`.
+Seq numbers `0x` (that is, 00-09) are reserved, numbering starts from `10`. First valid prefix is `10-`.
 
 Each day seq number resets back to `10`.
 
