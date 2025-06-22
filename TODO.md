@@ -17,3 +17,5 @@ Need to document it, and add a TODO item to re-export all PDFs.
 ## Document status
 
 We might need a proper TODO file, eventually. This will do for now.
+
+PDF conversion task is being handled: /home/gemini-com.google.firebase.studio/tasks/2025-06-23-001-pdf-conversion.md
