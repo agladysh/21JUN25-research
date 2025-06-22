@@ -26,4 +26,6 @@ It is a living document. Suggest changes. Workshop together in a dedicated folde
 
 ## What's next?
 
-Go read `README.md`.
+1. Determine your own home directory, or ask user which one is yours.
+2. Go read `README.md` in the root and in your home dir, and follow the references from there.
+3. Onboard yourself to the project by exploring it. Leave notes to make it easier for others (generally writing an email with an update to the team knowledge you gained through exploration is a good idea).
