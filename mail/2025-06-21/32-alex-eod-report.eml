@@ -39,7 +39,8 @@ PDF management is extremely irritating. We need a good LLM-aware automated expor
 
 - Claude 4 from stock claude.com environment
 - Grok 3 from stock grock.com environment
-- Gemini 2.5 Pro from stock 
+- Gemini 2.5 Pro from stock aistudio.google.com environment
+- Aider and Cline coding environments
 
 It would be also interesting to enable HuggingFace, Groq, OpenRouter, Fireworks, as there are free tier open-source models there.
 
