@@ -22,6 +22,9 @@ Each day seq number resets back to `10`.
 
 Correctly identify current date. If you have shell access, use appropriate command etc.
 
+E.g. Gemini in the Google Firebase Studio would run `run_terminal_command` with `date +%F`
+to determine the correct directory to put any new emails in.
+
 ## Note to LLMs
 
 There are MANY emails. Make sure to do full recursive directory listings.
