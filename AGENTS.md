@@ -30,6 +30,8 @@ Onboard yourself:
 
 1. Determine your own home directory within the repository (`./home/<id>/`), or ask user which one is yours.
 
+Hint: `TEAM.md` might help, as well as a directory listing of `./home/`.
+
 2. Go read `README.md` in the root and in your home dir, and follow the references from there.
 
 3. Read any other `README.md` files you may find. Make note, any `README.md` file is a living document, and may be confusingly obsolete and/or incorrect.
