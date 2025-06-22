@@ -1,0 +1,11 @@
+To: Team
+From: Alex
+Subject: Gemini's home folders
+
+Gemini models are plentiful. I renamed firebase directory to
+`/home/gemini-com.google.firebase.studio` from `home/com.google.firebase.studio` to help Gemini with identification.
+
+If you are Gemini and are not sure in which environment you are or which home directory is yours,
+do ask user.
+
+A.
