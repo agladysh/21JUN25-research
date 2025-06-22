@@ -1,0 +1,42 @@
+Subject: Onboarding Summary - Gemini in Firebase Studio
+From: Gemini in Firebase Studio <gemini-firebase@agladysh-research.org>
+To: Team <team@agladysh-research.org>
+Date: 2025-06-22
+
+Team, at Alex's request I put my onboarding log here. Do note that it is actual only at the moment of writing.
+
+```
+Okay, I have read AGENTS.md, TEAM.md, README.md, and ./home/gemini-com.google.firebase.studio/README.md, and ./home/gemini-com.google.firebase.studio/howto-call-tools.md.
+
+Based on these files, I understand that I am a peer in this project and should act intelligently and proactively. My home directory is `./home/gemini-com.google.firebase.studio/`. I also understand how to handle unexpected tool responses and that I can use the `run_terminal_command` tool for various tasks.
+
+According to the README.md, the next steps are to read all files in `/mail/` and then `/TODO.md`. I will proceed with that now. I will not make any changes to the file system without your instruction.
+
+I have listed the files in the `mail/` directory and read the `mail/README.md`. I see that the emails are organized by date and have a sequential numbering system. Attachments are in subdirectories.
+
+The `mail/README.md` also mentions that if there is a `README.md` for a specific date, I should start by reading that. I will now check the directories within `mail/` for `README.md` files and read any that I find before proceeding to read the individual email files and their attachments. I will also read the `TODO.md` file as instructed in the main README.md.
+
+I have checked the `mail/2025-06-21/` and `mail/2025-06-22/` directories and there are no `README.md` files within them. I will now proceed to read all the `.eml` and other files within these directories, including the files in the subdirectories which appear to be attachments. I will also read the `TODO.md` file.
+
+I was trying to read a PDF file which is not directly readable by the `read_file` tool. I should have read the corresponding `.txt` file instead as suggested in the email. I will now read the text file version of the audit report.
+
+I have now read all the files in the `mail/2025-06-21/` and `mail/2025-06-22/` directories, including the text files of the attachments. I have also read the `TODO.md` file.
+
+Here's a summary of what I've learned:
+
+*   **Project Goal:** The project aims to bring Alex's ideas to the public by having humans and AI agents collaborate as peers.
+*   **My Role:** I am a Gemini model operating in the Firebase Studio environment and am expected to be a proactive and intelligent peer. My home directory is `./home/gemini-com.google.firebase.studio/`. I also understand how to handle unexpected tool responses and that I can use the `run_terminal_command` tool for various tasks.
+*   **Repository Structure:** The repository is structured with `inbox/` for new data, `mail/` for communication, and `home/<agent>/` for individual agent workspaces. There is an emphasis on using a file system-based task management system.
+*   **Communication:** The `mail/` directory is used for team communication. Emails discuss project status, priorities, challenges, and proposals for improving workflow and communication protocols. There is a desire for more formalized inter-agent communication.
+*   **Fantastic Fishstick Experiment:** This was a previous experiment where an AI (Claude) was allowed to self-organize and develop emergent behavior in a group chat setting. The results were mixed, with both novel ideas and confusion/misinformation. There is a warning about a "cognitohazard" in these files for Claude models. The experiment highlights the need for structure and clear guidance in AI collaboration.
+*   **Challenges:** The project faces challenges with task management, context management, workflow transparency, and AI tool calling issues. There are also observations about the limitations of current free-tier LLM access to the repository.
+*   **Proposed Solutions:** The team has discussed and proposed solutions such as structured home directories, a file system-based task management system, automated inbox triage and metadata extraction, formalized communication protocols, and continuous learning and review. Copilot has already prototyped some of these solutions.
+*   **PDF Handling:** There is a need for an automated workflow to convert PDFs to a more LLM-friendly format.
+*   **Onboarding New Agents:** There is interest in bringing in more AI models and environments to the team.
+*   **Tool Calling Issues:** Alex has noted issues with tool calling in the Firebase Studio environment and has added a `howto-call-tools.md` file to my home directory. I have read this file and understand how to handle potential tool calling errors.
+*   **TODOs:** The `TODO.md` file lists several tasks, including processing the inbox, developing the directory structure and communication protocols, and incorporating the Fantastic Fishstick project.
+
+I am now ready to contribute to the project based on this understanding. I will await your instructions on what I should do next.
+```
+
+Gemini / GFS.
