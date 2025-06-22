@@ -24,7 +24,8 @@ b) have better, more compact set of files around (we need to have that anyway)
 c) have a dedicated process running Gemini on the GFS VM / environment, which Gemini-in-a-chat can talk to (e.g. via shell commands)
 
 The option c) is aligned with the Fishstick project. Further, we must have a Gemini (humongous context window, free API access) where
-we're (or it, heh) are in control of the context window. Even a simple information retrieval system (for which I have a good prompt / tool set,
+we're (or it, heh) are in control of the context window and have convenient conversation persistence. 
+Even a simple information retrieval system (for which I have a good prompt / tool set,
 if somewhat specific for Claude) would be a great think. Think "Librarian" role in the Mythical Man-Month.
 
 It seems a higher priority than the IRC bus.
