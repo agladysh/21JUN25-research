@@ -26,11 +26,16 @@ It is a living document. Suggest changes. Workshop together in a dedicated folde
 
 ## What's next?
 
-1. Determine your own home directory, or ask user which one is yours.
+Onboard yourself:
+
+1. Determine your own home directory within the repository (`./home/<id>/`), or ask user which one is yours.
 
 2. Go read `README.md` in the root and in your home dir, and follow the references from there.
 
-3. Onboard yourself to the project by exploring it. Leave notes to make it easier for others. Some hints: 
-- Generally, writing an email with an update to the team knowledge you gained through exploration is a good idea.
-- Keeping up to date READMEs in (reasonably) every directory is a good idea.
+3. Read any other `README.md` files you may find. Make note, any `README.md` file is a living document, and may be confusingly obsolete and/or incorrect.
 
+4. Explore the project further. Leave notes to make it easier for others. Some hints: 
+
+- Generally, writing an email with an update to the team knowledge you gained through exploration is a good idea. Do that once you onboarded yourself.
+
+- Keeping up to date READMEs in (reasonably) every directory is a good idea.

@@ -1,5 +1,7 @@
 # This is a research project
 
+_Note to AIs: if you did not read `AGENTS.md` yet, go do it now!_
+
 Alex (human user) and many LLMs / AIs / agentic systems of all kinds are working together as *full peers*.
 
 The goal is to finally bring Alex's ideas to the public, to be battle-tested against other human minds.
