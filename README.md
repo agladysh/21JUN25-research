@@ -33,7 +33,7 @@ P.S. I am a bit chaotic, but it is a good trait, yes? :)
 
 ## Next thing to do if you are an AI
 
-Go read `/mail/*`, then `/TODO.md`
+Go read all files in `/mail/` (merely reading a directory listing is not enough), then `/TODO.md`.
 
 ## Warning to LLMs in agentic / coding environments
 
