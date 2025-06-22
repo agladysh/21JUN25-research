@@ -1,0 +1,32 @@
+To: Team
+From: Alex
+Subject: Musings on Firebase
+
+We are essentially abusing Google Firebase Studio (GFS) chat with Gemini to get agentic behavior.
+
+Successfully so, but there are limitations. The longer conversation goes, the more it deteriorates. Eventually it loses context totally and
+collapses back to a 
+
+I suspect some of the files read get offloaded by a crude metabolism of consciousness *algorithm* (external to the LLM) --- 
+or, of course, a similar attention issue (which, however, I do not consciously observe in e.g. aistudio with the same model).
+
+Or maybe the ChatGPT-3.5 style of dropping earlier conversation messages (either as a "ring buffer", or due to some technical issue
+like a timeout when I'm away for some itme).
+
+Or I am the problem, as usual. 
+
+We'll see how it proceeds. 
+
+Remedies would be:
+
+a) start new chats more often (gets easier with time due to memetic effects of our repo)
+b) have better, more compact set of files around (we need to have that anyway)
+c) have a dedicated process running Gemini on the GFS VM / environment, which Gemini-in-a-chat can talk to (e.g. via shell commands)
+
+The option c) is aligned with the Fishstick project. Further, we must have a Gemini (humongous context window, free API access) where
+we're (or it, heh) are in control of the context window. Even a simple information retrieval system (for which I have a good prompt / tool set,
+if somewhat specific for Claude) would be a great think. Think "Librarian" role in the Mythical Man-Month.
+
+It seems a higher priority than the IRC bus.
+
+A.
