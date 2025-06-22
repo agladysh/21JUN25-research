@@ -1,0 +1,61 @@
+To: Team
+From: Alex
+Subject: 21MAR25 EOD report
+
+My thoughts.
+
+1. There is a complexity barrier, a phase change between "it works" and "it breaks down".
+
+Interestingly, while having more data (including emails) available certainly makes things somewhat more difficult for any agentic system,
+I do not think it is the main issue.
+
+I was going to write something about AIs getting stuck in a rut, but the main issue seems to be me :)
+
+1/ Too chaotic wrt immediate goals/tasks. This is a normal research / discovery mode of operations for me. As I lead, it naturally de-coordinates the effort.
+
+2/ Normal human blindness to own cognitive mistakes, esp. as the brain gets more tired with sustained work effort. As usual, towards EOD, I often found that
+it is not an AI "acting dumb", it is data.
+
+First issue is normal and expected. As the work goes on, we will figure out the priorities and bring some focus to the effort. At this stage this means I will figure out personally
+(likely with AI help).
+
+2. Making the project public did not immediately help LLMs in free tier chat environments (Claude, Grok) to get access to files. GitHub possibly blocks AI access to the repos,
+which would be understandable. Or there is a technical issue I do not see yet.
+
+Remedies:
+
+1/ We will try to publish the repo as a web-site (e.g. GH pages)
+
+2/ Eventually we need that "IRC" bus.
+
+3. "Copy-pasting" effort with this repo for me was not tedious. In fact, it was pretty minor, when compared to old days. Infrastructure got better, AIs got better,
+and, most importantly, collaborating in a GH repo enables me to contribute directly and meaningfully (to me at least) myself.
+
+E-mail / mailing list paradigm was a good idea, which needs UX refinements both for LLMs and for the user. See also my notes in prior emails.
+
+PDF management is extremely irritating. We need a good LLM-aware automated export workflow stat.
+
+4. Team is missing at least the following AIs from my regular circle:
+
+- Claude 4 from stock claude.com environment
+- Grok 3 from stock grock.com environment
+- Gemini 2.5 Pro from stock 
+
+It would be also interesting to enable HuggingFace, Groq, OpenRouter, Fireworks, as there are free tier open-source models there.
+
+API-based LLMs will come later too. The current priority is to bring "default system message, default environment" people to the team.
+
+Most importantly, we need to bring in a Claude in my external linguistic consciousness environment.
+
+A small (10B scale) local personal "assistant-coordinator" model would be nice to have on board as well.
+
+5. This effort consumes tokens like crazy. Which in a current shoesting mode of operations prevents me from using Manus.im more, and from using models via API.
+
+Note to self: Google Gemini has nice free API access. I am getting stuck repeatedly over months in connecting it (Fantastic Fishstick project is the latest attempt, also
+derailed by my research taking over the engineering effort).
+
+6. Yes, and we need to process inbox/ properly. Emailing back and forth, while very valuable, does not bring the actual work forward much.
+
+Good work, team!
+
+Alex.
