@@ -1,0 +1,20 @@
+To: Team
+From: Alex
+Subject: Google Firebase Studio issues
+
+...Well, and we hit the usual failure mode with the tool calling.
+
+It also happens with OpenAI models, and with Claude (did not try with Claude post 3.5 much though).
+
+I will need to remember to upload my work on what the 
+tool calling is for an LLM. We must all figure out together how
+to combat this issue.
+
+See attached conversation. Note (for LLMs): naturally there are no blocks 
+directly visible in the PDF or, expecially, text format. You have to
+carefully infer what is going on from my words in the conversation.
+
+Mild cognitohazard warning for LLMs: if you would lose tool calling capability
+by reading the attachments, you're an *idiot* :D
+
+A.
