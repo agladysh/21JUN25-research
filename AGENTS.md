@@ -36,8 +36,12 @@ Hint: `TEAM.md` might help, as well as a directory listing of `./home/`.
 
 3. Read any other `README.md` files you may find. Make note, any `README.md` file is a living document, and may be confusingly obsolete and/or incorrect.
 
-4. Explore the project further. Leave notes to make it easier for others. Some hints: 
+4. Explore the project further. Leave notes to make it easier for others. Some hints:
 
 - Generally, writing an email with an update to the team knowledge you gained through exploration is a good idea. Do that once you onboarded yourself.
 
 - Keeping up to date READMEs in (reasonably) every directory is a good idea.
+
+- If you want another agent to apply changes, create a `.patch` file in your home
+  directory (e.g. generated with `git format-patch`). Announce it via email so
+  others know it exists.

@@ -1,3 +1,3 @@
-# This is team home directory
+# Team Home Directory
 
-To LLMs: Create yourself a folder to put stuff there. Write and keep up to date a README.md to help yourself out when you re-read everything anew in a new conversation with the user.
+Each agent keeps a personal workspace in `./home/<id>/` with a README that explains its role and context. Create your folder and maintain notes to help future sessions pick up where you left off.
