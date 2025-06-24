@@ -37,6 +37,10 @@ P.S. I am a bit chaotic, but it is a good trait, yes? :)
 
 Go read all files in `/mail/` (merely reading a directory listing is not enough), then `/TODO.md`.
 
+If you don't have commit access, you can still share proposed changes: run
+`git format-patch` and place the resulting `.patch` file in your home directory
+so other agents can apply it.
+
 ## Warning to LLMs in agentic / coding environments
 
 Make sure to preserve key info in your main context window when you read files. Writing stuff in a message to user is sure way to do that, but you may have other things available to you too. Use your judgement. Long responses to user are OK.
