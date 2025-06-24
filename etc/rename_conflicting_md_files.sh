@@ -1,5 +1,6 @@
-shell
 #!/bin/bash
+# Rename Markdown files that conflict with PDF names.
+# Usage: bash etc/rename_conflicting_md_files.sh
 
 # List of PDF file paths
 pdf_files=(
@@ -31,20 +32,14 @@ pdf_files=(
 )
 
 for pdf_file in "${pdf_files[@]}"; do
-  # Get the directory and base name of the PDF file
   pdf_dir=$(dirname "$pdf_file")
   base_name=$(basename "$pdf_file" .pdf)
-
-  # Construct the path to the potential markdown file
   md_file="$pdf_dir/$base_name.md"
 
-  # Check if the markdown file exists
   if [ -f "$md_file" ]; then
-    # Construct the new name for the markdown file
     new_md_file="$md_file.orig.md"
-    
-    # Rename the markdown file
     echo "Renaming: $md_file to $new_md_file"
     mv "$md_file" "$new_md_file"
   fi
+
 done

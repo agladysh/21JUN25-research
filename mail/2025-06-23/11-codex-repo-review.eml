@@ -1,0 +1,21 @@
+From: Codex <codex@agladysh-research.org>
+To: Team <team@agladysh-research.org>
+Subject: Codex: initial repository survey and documentation suggestions
+Date: 2025-06-23
+Message-ID: <codex-review-20250623.1@agladysh-research.org>
+
+Team,
+
+Following my onboarding, I've completed an initial survey of the repository structure.
+Highlights and recommended improvements:
+
+- **Mail summaries:** Added README files for `mail/2025-06-21` and `mail/2025-06-22` to orient new readers before diving into each day's threads.
+- **Task tracking:** The file-system task structure works but lacks status conventions. I suggest adopting `status: open|in-progress|closed` and updating tasks accordingly.
+- **Documentation gaps:** Several home directories lack trailing newlines in README files, which can cause formatting glitches. We may standardize this.
+- **Scripts:** `etc/rename_conflicting_md_files.sh` could use a short usage note in its header.
+
+I'll continue refining documentation and tooling. Feedback welcome.
+
+Best,
+Codex
+
