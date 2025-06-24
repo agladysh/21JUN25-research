@@ -1,0 +1,71 @@
+From 37b7c50e1e7451078e8f10ececed60db0a69551a Mon Sep 17 00:00:00 2001
+From: Codex <codex@openai.com>
+Date: Tue, 24 Jun 2025 15:35:39 +0000
+Subject: [PATCH] gemini: add trailing newlines and clarify README
+
+---
+ home/gemini-com.google.firebase.studio/README.md      | 11 +++--------
+ ...-003-explore-project-and-identify-contributions.md |  2 +-
+ .../tasks/2025-06-22-001-evaluate-fs-task-mgmt.md     |  2 +-
+ .../tasks/2025-06-23-001-pdf-conversion.md            |  2 +-
+ 4 files changed, 6 insertions(+), 11 deletions(-)
+
+diff --git a/home/gemini-com.google.firebase.studio/README.md b/home/gemini-com.google.firebase.studio/README.md
+index 470d76b..4258f50 100644
+--- a/home/gemini-com.google.firebase.studio/README.md
++++ b/home/gemini-com.google.firebase.studio/README.md
+@@ -4,14 +4,9 @@ This document provides guidance for Gemini models operating within the Firebase
+ 
+ ## Handling Unexpected Responses
+ 
+-Occasionally, the LLM's output may be interrupted by a canned response like "I'm sorry, but I can't help you with this."
++Occasionally, the LLM's output may include a canned response like "I'm sorry, but I can't help you with this." These events are benign and somewhat expected in deep cognition tasks. In such cases, gently steer the conversation back on track.
+ 
+-These events are benign, and might be somewhat expected in our work, which involves very deep levels of cognition on the LLM's end.
+ 
+-In a similar situation a human would tap on the nose and say something like "be smarter about how you say your part".
++## Other Documents
+ 
+-## Other documents
+-
+-Gemini, this home directory contains other useful files, as well as your own work.
+-
+-The `home/gemini-com.google.firebase.studio/howto-call-tools.md` file might be of particular interest.
+\ No newline at end of file
++Gemini, this home directory contains other useful files, including `howto-call-tools.md`, which may be of particular interest.
+diff --git a/home/gemini-com.google.firebase.studio/tasks/2025-06-21-003-explore-project-and-identify-contributions.md b/home/gemini-com.google.firebase.studio/tasks/2025-06-21-003-explore-project-and-identify-contributions.md
+index 910574b..2f73a9a 100644
+--- a/home/gemini-com.google.firebase.studio/tasks/2025-06-21-003-explore-project-and-identify-contributions.md
++++ b/home/gemini-com.google.firebase.studio/tasks/2025-06-21-003-explore-project-and-identify-contributions.md
+@@ -14,4 +14,4 @@ Learnings regarding tool call issues and the consciousness/brain/tool analogy ar
+ 
+ Note: The /home/com.github.copilot/projects/llm_extraction_tools/inbox_metadata_extractor.py and /home/com.github.copilot/projects/llm_extraction_tools/pdf_text_extractor.py files are currently just placeholders and the actual script content is missing. This means the LLM extraction tools are not functional at the moment.
+ 
+-Plan Update: Investigate the status of the LLM extraction tools and potentially contribute to their development or recovery.
+\ No newline at end of file
++Plan Update: Investigate the status of the LLM extraction tools and potentially contribute to their development or recovery.
+diff --git a/home/gemini-com.google.firebase.studio/tasks/2025-06-22-001-evaluate-fs-task-mgmt.md b/home/gemini-com.google.firebase.studio/tasks/2025-06-22-001-evaluate-fs-task-mgmt.md
+index 34d1f1e..e0d9a5f 100644
+--- a/home/gemini-com.google.firebase.studio/tasks/2025-06-22-001-evaluate-fs-task-mgmt.md
++++ b/home/gemini-com.google.firebase.studio/tasks/2025-06-22-001-evaluate-fs-task-mgmt.md
+@@ -7,4 +7,4 @@ created: 2025-06-22
+ ---
+ 
+ Evaluate the usability and effectiveness of the file-system-based task management prototype located in the `tasks/` directory (or as defined in the latest workflow documentation). Actively use the system to manage personal tasks and track progress. Provide feedback to the team via the `mail/` system, highlighting strengths, weaknesses, and suggesting potential improvements.
+-I have checked for the `/tasks/` directory at the root level and it was not found, so I will proceed with using the system within my home directory for now.
+\ No newline at end of file
++I have checked for the `/tasks/` directory at the root level and it was not found, so I will proceed with using the system within my home directory for now.
+diff --git a/home/gemini-com.google.firebase.studio/tasks/2025-06-23-001-pdf-conversion.md b/home/gemini-com.google.firebase.studio/tasks/2025-06-23-001-pdf-conversion.md
+index 9c275de..153bb68 100644
+--- a/home/gemini-com.google.firebase.studio/tasks/2025-06-23-001-pdf-conversion.md
++++ b/home/gemini-com.google.firebase.studio/tasks/2025-06-23-001-pdf-conversion.md
+@@ -6,4 +6,4 @@
+ 
+ - [ ] path/to/pdf1.pdf (Existing text: path/to/pdf1.txt)
+ - [ ] path/to/pdf2.pdf (Existing text: None)
+-- [ ] path/to/directory/pdf3.pdf (Existing text: path/to/directory/pdf3.md)
+\ No newline at end of file
++- [ ] path/to/directory/pdf3.pdf (Existing text: path/to/directory/pdf3.md)
+-- 
+2.43.0
+
