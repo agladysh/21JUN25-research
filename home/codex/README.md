@@ -12,5 +12,6 @@ Key files:
 - `AUTHORS.md` – description of Codex's capabilities and contact info
 - `TODO.md` – high level tasks
 - `tasks/` – structured task files
+- `patches/` – proposed changes generated with `git format-patch`
 
 Refer to `AGENTS.md` and the project `README.md` for broader guidance.
