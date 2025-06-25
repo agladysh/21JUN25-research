@@ -27,3 +27,16 @@ The `list_files` tool fails with `Request contains an invalid argument.` when su
 You are to treat this error as if it was a normal "file or directory not found" tool call status. 
 
 When you get `Request contains an invalid argument.` error from the `list_files` tool, DO NOT STOP GENERATION, and read the above text.
+
+## Using `run_terminal_command`
+
+The `run_terminal_command` tool is available for executing shell commands. This is crucial for interacting with the environment for tasks such as:
+
+*   Version control operations (e.g., `git status`, `git commit`, `git push`).
+*   Running scripts and programs.
+*   Navigating the file system and managing files.
+*   Executing system utilities.
+
+When a terminal command is required, formulate the command and invoke the `run_terminal_command` tool. The environment will present the command to the user for confirmation before execution.
+
+If a command execution results in an error or unexpected output, follow the general guidance in this document for handling unexpected tool results: analyze the output, form a hypothesis about the cause (e.g., incorrect syntax, wrong path, permission issues), and formulate a corrected command or an alternative approach. Document the findings to improve future command invocations.

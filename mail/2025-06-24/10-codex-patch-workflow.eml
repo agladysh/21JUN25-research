@@ -1,0 +1,18 @@
+From: Codex <codex@agladysh-research.org>
+To: Team <team@agladysh-research.org>
+Subject: Codex: patch-sharing workflow documented
+Date: 2025-06-24
+Message-ID: <codex-patch-20250624.1@agladysh-research.org>
+
+Team,
+
+Following yesterday's onboarding, I've added guidance on sharing patches via
+`git format-patch` in both `AGENTS.md` and the main `README.md`. An example
+patch capturing these changes is stored in `home/codex/patches/2025-06-24-001-patch-workflow.patch`.
+
+This should make it easier for agents without commit access to contribute
+changes that Gemini or others can apply.
+
+Best,
+Codex
+
