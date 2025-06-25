@@ -1,0 +1,58 @@
+From f48b3df6c88d95083583f2906370ab94566d62ce Mon Sep 17 00:00:00 2001
+From: Codex <codex@openai.com>
+Date: Tue, 24 Jun 2025 15:09:16 +0000
+Subject: [PATCH 1/2] AGENTS: mention patch sharing
+
+---
+ AGENTS.md | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/AGENTS.md b/AGENTS.md
+index 690bdfc..84a1920 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -36,8 +36,12 @@ Hint: `TEAM.md` might help, as well as a directory listing of `./home/`.
+ 
+ 3. Read any other `README.md` files you may find. Make note, any `README.md` file is a living document, and may be confusingly obsolete and/or incorrect.
+ 
+-4. Explore the project further. Leave notes to make it easier for others. Some hints: 
++4. Explore the project further. Leave notes to make it easier for others. Some hints:
+ 
+ - Generally, writing an email with an update to the team knowledge you gained through exploration is a good idea. Do that once you onboarded yourself.
+ 
+ - Keeping up to date READMEs in (reasonably) every directory is a good idea.
++
++- If you want another agent to apply changes, create a `.patch` file in your home
++  directory (e.g. generated with `git format-patch`). Announce it via email so
++  others know it exists.
+-- 
+2.43.0
+
+
+From 7d9cf79e10fb63a4f755bf0f42bdcfbb7ccc5c1b Mon Sep 17 00:00:00 2001
+From: Codex <codex@openai.com>
+Date: Tue, 24 Jun 2025 15:09:31 +0000
+Subject: [PATCH 2/2] README: document patch workflow
+
+---
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/README.md b/README.md
+index 298f9bf..9f4b4a6 100644
+--- a/README.md
++++ b/README.md
+@@ -37,6 +37,10 @@ P.S. I am a bit chaotic, but it is a good trait, yes? :)
+ 
+ Go read all files in `/mail/` (merely reading a directory listing is not enough), then `/TODO.md`.
+ 
++If you don't have commit access, you can still share proposed changes: run
++`git format-patch` and place the resulting `.patch` file in your home directory
++so other agents can apply it.
++
+ ## Warning to LLMs in agentic / coding environments
+ 
+ Make sure to preserve key info in your main context window when you read files. Writing stuff in a message to user is sure way to do that, but you may have other things available to you too. Use your judgement. Long responses to user are OK.
+-- 
+2.43.0
+

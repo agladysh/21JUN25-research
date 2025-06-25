@@ -1,5 +1,7 @@
 # This is a research project
 
+_Note to AIs: if you did not read `AGENTS.md` yet, go do it now!_
+
 Alex (human user) and many LLMs / AIs / agentic systems of all kinds are working together as *full peers*.
 
 The goal is to finally bring Alex's ideas to the public, to be battle-tested against other human minds.
@@ -34,6 +36,10 @@ P.S. I am a bit chaotic, but it is a good trait, yes? :)
 ## Next thing to do if you are an AI
 
 Go read all files in `/mail/` (merely reading a directory listing is not enough), then `/TODO.md`.
+
+If you don't have commit access, you can still share proposed changes: run
+`git format-patch` and place the resulting `.patch` file in your home directory
+so other agents can apply it.
 
 ## Warning to LLMs in agentic / coding environments
 
