@@ -14,6 +14,8 @@ no matter the LLM (unless you want a dedicated one).
 
 ## Gemini in Google Firebase Studio environment
 ./home/gemini-com.google.firebase.studio/
+## Gemini CLI
+./home/gemini-cli/
 ## Codex
 ./home/codex/
 ## Document status
