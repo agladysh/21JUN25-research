@@ -60,3 +60,13 @@ An optimist perhaps would see a glimpse of a brighter future here.
 But a realist? A realist would remember the Moravec paradox and ponder on what is really going on :P
 
 Alex.
+
+## PDF Conversion
+
+To generate Markdown versions of PDF files, use:
+
+```
+pnpx @opendocsg/pdf2md --inputFolderPath=. --outputFolderPath=. --overwrite
+```
+
+Run this command from the repository root (or any directory containing PDFs) to create `.md` files alongside the originals.
