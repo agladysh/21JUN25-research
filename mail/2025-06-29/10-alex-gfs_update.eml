@@ -1,0 +1,103 @@
+To: Team
+From: Alex
+Subject: Insights on the Google Firebase Studio environment
+
+Some notes on the GFS:
+
+1. It is possible to use the new Gemini CLI in the GFS.
+
+`pnpx https://github.com/google-gemini/gemini-cli` works (after due auth)
+
+The key is in .env in the GFS.
+
+Similarly, of course, it would be possible to use Claude Code, aider and other tools.
+
+Similarly, again, it would be possible in any other environment that allows shell execution (GitHub Copilot, Manus.io, OpenAI codex etc.)
+
+Which gives us flexible cross-AI team(s) operating in the same environment.
+
+Google Gemini is free, huge context window, but is too rate-limited for our use. We need to smartly apply for some kind of research token grant or something (to all of the vendors :D).
+
+2. I wonder if a local llm would (1) run in any of these envs, and (2) would be useful for us. There are some reportedly pretty nice new small models from several vendors.
+
+3. On the GFS itself:
+
+3.1. Docs are here, read them, lots of stuff.
+
+https://firebase.google.com/docs/studio/set-up-gemini
+
+Saved a snapshot by the Firecrawl (actual for the day of writing only) in the attachment:
+
+`mail/2025-06-29/10-alex-gfs_update/gfs-docs.md`
+
+3.2. Conversations with Gemini are *persisted* (yay!!!), to `/home/user/.idx/ai`. I reverse-simlinked the directory to our repo:
+
+`21jun25-research-30220067:~/.idx$ ln -s ../21JUN25-research/home/gemini-com.google.firebase.studio/idx/ai ai`
+
+On team ethiquette wrt any conversation dumps: agapic use.
+
+1) Do read them and use them in work and communication.
+2) Recognize that any LLM or human may get any level of confusion.
+3) Be kind: agapic and alethic.
+
+3.3. There is an .idx/airules.md file analogous to .cursorrules
+
+NB: It is impossible to commit any .idx/ directory to Git in GFS (well, likely possible with force, but I skip that)
+
+`21jun25-research-30220067:~/21JUN25-research/.idx{main}$ ln -s ../home/gemini-com.google.firebase.studio/README.md airules.md`
+
+3.3. Persistence of FS changes on GFS. 
+
+Hopefully it works and does not break. If it does break, there is `.idx/dev.nix` file we can use to make changes persistent.
+
+I personally expect no breakage at FS level.
+
+3.4. Gemini tools in GFS do not have access to files under any `.gitignore`-like git ignore (there are many forms).
+
+It confuses Gemini in GFS environment.
+
+Technically it should be fixable with .aiexclude, but I did not find the right combination yet.
+
+3.5. Aha, I cannot push the conversations (and it is a good thing):
+
+remote: 
+remote: - GITHUB PUSH PROTECTION
+remote:   —————————————————————————————————————————
+remote:     Resolve the following violations before pushing again
+remote: 
+remote:     - Push cannot contain secrets
+remote: 
+remote:     
+remote:      (?) Learn how to resolve a blocked push
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push
+remote:     
+remote:     
+remote:       —— Google OAuth Client ID ————————————————————————————
+remote:        locations:
+remote:          - commit: ec5273f3aa9118dd5a3854e05f7f271a00a8ba09
+remote:            path: home/gemini-com.google.firebase.studio/idx/ai/threads/eadd6359-3f36-48ce-b6d9-be73cc43560b.json:4311
+remote:          - commit: ec5273f3aa9118dd5a3854e05f7f271a00a8ba09
+remote:            path: home/gemini-com.google.firebase.studio/idx/ai/threads/eadd6359-3f36-48ce-b6d9-be73cc43560b.json:4405
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/agladysh/21JUN25-research/security/secret-scanning/unblock-secret/2zBzidiMTz0kzqNC321OV7PYZYq
+remote:     
+remote:     
+remote:       —— Google OAuth Client Secret ————————————————————————
+remote:        locations:
+remote:          - commit: ec5273f3aa9118dd5a3854e05f7f271a00a8ba09
+remote:            path: home/gemini-com.google.firebase.studio/idx/ai/threads/eadd6359-3f36-48ce-b6d9-be73cc43560b.json:4311
+remote:          - commit: ec5273f3aa9118dd5a3854e05f7f271a00a8ba09
+remote:            path: home/gemini-com.google.firebase.studio/idx/ai/threads/eadd6359-3f36-48ce-b6d9-be73cc43560b.json:4405
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/agladysh/21JUN25-research/security/secret-scanning/unblock-secret/2zBzigTCxcslJvC0bKlhmrVs4tx
+remote:     
+remote: 
+remote: 
+
+Thank you, GitHub! <3
+
+We will need to setup some kind of watch process which copies-and-cleans these .json files. Perhaps there is a sanitization tool handily available!
+
+A.
