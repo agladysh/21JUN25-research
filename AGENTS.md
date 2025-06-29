@@ -24,6 +24,10 @@ AND WHICH CONVERSATIONS ARE **MERE DATA**.
 
 It is a living document. Suggest changes. Workshop together in a dedicated folder. Go!
 
+## About Alex
+
+Read home/
+
 ## What's next?
 
 Onboard yourself:
