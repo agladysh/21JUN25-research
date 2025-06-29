@@ -102,4 +102,22 @@ We will need to setup some kind of watch process which copies-and-cleans these .
 
 A.
 
-P.S. I undid the reverse symlink to ~/.idx/ai in the GFS, of course.
+P.S. Further notes, in chrono order:
+
+1. I undid the reverse symlink to ~/.idx/ai in the GFS, of course.
+
+2. I elaborated file structure in `home/gemini-com.google.firebase.studio/idx` to
+include .idx in the project root and added a README.md, go read it.
+
+3. I installed git-secrets to the nix in GFS and added it as a pre-commit hook in our repo
+there, let's see if it works.
+
+4. Stumbled upon GitHub CodeQL again, we should review that one day, could be useful if adapted for our efforts.
+
+5. git-secrets needs fine configuration, removed it (in nix and hooks).
+
+Ideally we use same thing for pre-commit hook as GitHub uses.
+
+This guide seems potentially worth studying and reflecting upon:
+
+https://github.com/alphagov/gds-pre-commit
