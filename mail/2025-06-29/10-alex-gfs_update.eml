@@ -101,3 +101,5 @@ Thank you, GitHub! <3
 We will need to setup some kind of watch process which copies-and-cleans these .json files. Perhaps there is a sanitization tool handily available!
 
 A.
+
+P.S. I undid the reverse symlink to ~/.idx/ai in the GFS, of course.
