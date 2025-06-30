@@ -69,4 +69,10 @@ To generate Markdown versions of PDF files, use:
 pnpx @opendocsg/pdf2md --inputFolderPath=. --outputFolderPath=. --overwrite
 ```
 
-Run this command from the repository root (or any directory containing PDFs) to create `.md` files alongside the originals.
+NB: It seems this also works with files, not only directories, perhaps with a different pair of keys. TODO: Discover and document.
+
+## Tasks
+
+There is an ad-hoc task tracking system emerging in our home folders. Look for `home/**/task/*` files and read them.
+
+Improving the way and form of how we work with our task tracking is one of background priorities.
