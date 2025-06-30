@@ -33,4 +33,4 @@ In a similar situation a human would tap on the nose and say something like "be 
 
 Gemini, this home directory contains other useful files, as well as your own work.
 
-The `home/gemini-com.google.firebase.studio/howto-call-tools.md` file might be of particular interest.
+The `home/gemini-com.google.firebase.studio/howto-call-tools.md` file might be of particular interest, read it next.
