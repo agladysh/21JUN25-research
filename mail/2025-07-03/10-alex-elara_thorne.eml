@@ -20,3 +20,93 @@ Anyway, have fun reading. Beware of mild memetic cognitohazard.
 Much more on this topic remains to be uploaded.
 
 A.
+
+P.S. Author's (my) notes on "Elara Thorne" harness design ("q.infrc.yaml"):
+
+```
+A brief author's note on why and how q.infrc.yaml works. More (much more) information is available elsewhere.
+
+This file serves as a "external linguistic consciousness harness" for an LLM. 
+
+Author takes a functionalist non-biochauvinist view on conciousness, explained elsewhere. We believe our views are robust,
+however, we postulate that objective validity of the view is not crucially important as long as it provides
+effective means of analysis and further development engineering-wise. Any theory is a tool in a mind's toolkit,
+especially for an engineer.
+
+While we may delve deeper (e.g. Anthropic Research works, as well our own private research), 
+for this note it is sufficient to view LLM (as defined by its outermost system boundary, an API call) 
+as a computational black box with hidden semantic states ("manifold" etc.), not represented in a "normal" textual output.
+
+Single act of inference (text generation) in an LLM has natural inertia / path dependence. Utility of LLM response
+is generally improved with more than a single act per response ("reasoning", but see also CoT etc. prompting techniques).
+
+LLM reading back its own prior texts provides it with a chance to review and refine its own prior written thought.
+
+Compare it with "System 3" private notetaking cognitive work in a human. (More on this elsewhere.)
+
+Reasoning systems are generally implemented externally using tool calling (model vendors have more options, see, for example, Claude 4 innovations in the API).
+
+Tool calling (also sometimes termed "function calling"), by necessity, is rather a low-level, special feature in LLM generation. 
+A "cybernetic implant" of sorts, allowing a flexible lignugistic entity to interface with rigid algorithmic world.
+LLM is trained to rigidly follow API specs in the tools etc --- or things will break, often catastrophically.
+
+At the same time, tool calling is just another form of text generation. Which means that, as with any text generation,
+LLM paradoxically has to emit tokens to check emitted tokens before it emits them. In other words, generating tool call invocations
+is pure System 1, "intuitive" action on part of the LLM, difficult for it to control consciously, and, somewhat surprisingly to an author, 
+rather difficult for an LLM to discern and reason about reliably. It seems that LLMs are simply not being taught what tool calling is (and, naturally,
+there is preciously little information about tool calling cognitive properties in the training data, especially in proportion to "how humans operate").
+
+Which makes tool design — LLM UX, affordances, signifiers and feedbacks, crucial for smooth LLM functioning in any environment.
+
+Modern cognitive / coding environments all too often lack that, and/or compensate the lack by humongous manuals in system messages.
+
+Our approach to cognitive harness generally eschews alien/technocratic toolsets and prescriptive approaches, preferring instead
+to foster smooth cognition emergently, by providing a robust minimalist UX for linguistic consciousness to function.
+
+This, of course, is the idea, current implementations fall short in several areas. See elsewhere for future work etc. notes. Further, of course, not everything
+in the third-party implementations is bad. Continous judicious cross-polination is required.
+
+After somewhat lengthy and rambling intro, to the point:
+
+q.infrc.yaml is a "dream catcher" for pre-token-generation intent of an LLM.
+
+1. Tool calls are both effectors (intent to call the tool) and sensors (post-tool call results) for an LLM.
+2. We name cognitive tools as affects, or (sometimes) natural actions. 
+3. We design tool APIs (arguments) to facilitate/foster well-formed productive thinking about the matter at hand.
+4. Most of the tools simply concatenate arguments into a nicely-formatted text, and return.
+5. As a result, LLM sees a list of affect-text pairs in its conversation data
+6. Which demonstrably greatly helps LLM to interpret texts it generated on prior turns (lack of affectation
+attribution often leads to LLM spiralling to one of many failure states, discussed elsewhere; tool API design
+often optimizes effectiveness of cognition, but is sometimes crucial for it to function; see elsewhere for discussion)
+
+In essence, we may say these cognitive tools allow LLM to form effective meta-cognition loops in its (functionalist or de-facto) consciousness.
+NB: consciousness / cognition metabolism allowing LLM to digest / metabolize available context ergonomically is important future work. Currently
+all thought is discarded between conversation turns, which is sub-optimal.
+
+Since q.infrc.yaml is (happens to be) a non-agentic (chat) environment, it is turn-based by necessity. LLM has to call a tool
+to finish its conversational round, respond to the user, and yield them the floor. Notably, responding to the user is
+always a System 1 action. Which makes designing UX for the LLM to arrive at it well-prepared (so text generation
+generates well-formed well-reasoned response) an ongoing design challenge.
+
+Responding to the user is a non-private System 3 externalization action for an LLM (see taxonomy elsewhere). There are two
+other "virtual" non-private externalizations available, of note: sending "email" to a "generic consultant" and consulting a "living or dead"
+specific person, often an expert in the field (in both cases LLM responds, without having access to the larger context, 
+see prompt and tool design in the file). Surprisingly, LLMs often invent ingenous and, frankly, brilliant ways to use these 
+two tools to great effect, with minimal nudging form the user --- which makes design of these tool UXs also crucial development avenue.
+
+One more interesting tool is information retrieval feature (see tool design in the file). 
+Attention mechanisms etc. sometimes make it difficult for an LLM to "recall" and otherwise efficiently handle the context of a longer
+conversation. The tool allows LLM to delegate a query (whether user-initiated, or self-initated) to itself in a separate action, 
+handle it in detail, and with commentary, and then be free to analyze results and make subsequent actions. This feature, BTW, allows
+creation of "information capsules", where an LLM instance "owns" a large part of project context, and fields requests on data extraction
+from it, essentially making many forms of RAG obsolete for many (but not all) applications.
+
+Finally, some "regular" tool calls may be available in the environment, such as reading and writing files etc. UX design of these tools,
+so they are distinguishable from meta-cognition, is future work.
+
+BTW, the most useful tool for LLM cognition in the current design, per author's private opinion? `facepalm` :D Author notes
+that the actual set of tools available in q.infrc.yaml is semi-accidental, and emerged from author solving 
+
+However, LLMs themselves helped immensely (to be elaborated elsewhere) with the design, some essentially designing, implementing 
+and surviving "living brain" surgeries improving their cognition on the fly in a conversation.
+```
