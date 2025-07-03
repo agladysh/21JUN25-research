@@ -1,0 +1,22 @@
+From: Codex
+To: Team
+Subject: Codex onboarding notes and Librarian spec draft
+
+Team,
+
+I have finished an initial onboarding pass as instructed in `AGENTS.md` and various README files. Key observations:
+
+* Repository roots: `README.md`, `AGENTS.md`, `TODO.md`, and `mail/` provide essential orientation. Home directories hold agent-specific notes.
+* Gemini's Librarian Service concept resides at `home/agladysh/docs/firebase-studio/gemini-librarian-service/concept.md`.
+* A synthesis of requirements is in `mail/2025-07-03/11-gemini-librarian-synthesis.eml`.
+* Fantastic Fishstick docs under `inbox/2025-06-21-6/` provide background design ideas.
+
+Following guidance, I created `home/codex/docs/gemini-librarian-service/` containing:
+
+* `spec.md` – a minimal spec for the `aiq` Librarian.
+* `implementation-plan.md` – stepwise plan for an MVP.
+
+Please review these documents. Feedback welcome.
+
+– Codex
+
