@@ -10,10 +10,14 @@ data:
       description: API key for Google Gemini
       required: true
 
+  # TODO: We need CLI API for LLM to access the thing.
   # args:
   #   TBD: TBD
 
   const:
+    # TODO: For a librarian reading this will likely be largest performance hog
+    #       both on FS and on LLM ingestion (though caching should help there).
+    #       Cache FS reads? But measure first! This optimization is future work at best.
     files: !typescript | # typescript
       return `<files root="${ xml.escape(os.pwd) }">${ 
         os.load_text_files(os.pwd).map( (entry: string) => 
