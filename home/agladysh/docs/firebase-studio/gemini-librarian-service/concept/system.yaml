@@ -25,4 +25,5 @@ aiq:
     };
 
 # TODO: Add declarative tests for everything
-# TODO: Define all those tags, whenever possible, declaratively as well.
+# TODO: Define all those tags, whenever possible, declaratively as well. 
+#       The idea is, as usual, that everything, but the smallest core is bootstrapped.
