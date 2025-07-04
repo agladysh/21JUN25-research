@@ -1,0 +1,83 @@
+# TODO: This whole thing, including string templates, should compile (translate) to typescript, with proper source line/file attribution
+
+%TAG ! tag:agladysh-research.org,2025:aiq/
+---
+!<!extends('./system.yaml')>
+
+data:
+  env:
+    GEMINI_API_KEY: !secret
+      description: API key for Google Gemini
+      required: true
+
+  # args:
+  #   TBD: TBD
+
+  const:
+    files: !typescript | # typescript
+      return `<files root="${ xml.escape(os.pwd) }">${ 
+        os.load_text_files(os.pwd).map( (entry: string) => 
+          `<file path="${ xml.escape(entry.relpath) }">${ xml.cdata(entry.content) }</file>`
+        ).join('\n')
+      }</files>`;
+
+    role:
+      You are Gemini, an AI peer researcher, operating in the AIQ environment.
+
+    system: !typescript | # typescript
+      return `
+        ${ data.const.role }
+
+        Snapshot of the project filesystem:
+
+        ${ data.const.files }
+
+        AIQ environment:
+
+        ${ aiq.describe() }
+      `;
+
+tools:
+  retrieve:
+    description: Advanced Context Window Information Retrieval System
+    parameters:
+      query:
+        type: string
+        required: true
+        # TODO: Legacy description text, rewrite from scratch
+        description: !njk | # njk
+          What do you need to retrieve from the context window, as a concrete request for information
+      remarks:
+        type: string
+        required: false
+        description: !njk | # njk
+          Your remarks, if required
+    do:
+      - !genai
+          model: gemini-2.5-pro
+          system_instruction: !get data.const.role # TODO: Use something custom-made?
+          # TODO: Finish the implementation, see concept.md
+
+globals:
+  CONVERSATION: [ ]
+
+do:
+  - !label loop
+
+  - !set globals.CONVERSATION:
+    - user: !input
+        prompt: Enter User message
+  
+  - !genai
+      model: gemini-2.5-pro
+      system_instruction: !get data.const.system
+      history: !get globals.CONVERSATION
+      functions: !get tools
+      on_success:
+        - !typescript globals.CONVERSATION.push($result);
+
+  - !cli.print | # njk
+
+  - !goto loop
+
+  - !cli.print Done

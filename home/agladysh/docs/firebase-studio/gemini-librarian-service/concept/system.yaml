@@ -1,0 +1,28 @@
+os:
+  pwd: !typescript | # typescript
+    return 'TODO: return PWD';
+  
+  find_text_files: !typescript | # typescript
+    return function load_text_files(rootPath: string) {
+      return 'TODO: Implement load_text_files()';
+    }
+
+xml:
+  escape: !typescript | # typescript
+    return function escape() {
+      return 'TODO: Implement';
+    };
+
+  cdata: !typescript | # typescript
+    return function cdata() {
+      return 'TODO: Implement';
+    };
+
+aiq:
+  describe: !typescript | # typescript
+    return function describe() {
+      return 'TODO: Generate a description';
+    };
+
+# TODO: Add declarative tests for everything
+# TODO: Define all those tags, whenever possible, declaratively as well.
