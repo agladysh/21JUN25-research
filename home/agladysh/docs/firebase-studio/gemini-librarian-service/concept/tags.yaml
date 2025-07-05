@@ -1,0 +1,15 @@
+root: tag:agladysh-research.org,2025:aiq/
+
+# TODO: This file should be loaded first by convention (system "finds" it). It registers a tag root etc. Probably needs a dot-name or something.
+
+# TODO: review yaml spec and split tags by type
+tags:
+  extends: TODO
+  typescript: TODO
+  get: TODO
+  set: TODO
+  label: TODO
+  print: TODO
+  goto: TODO
+  genai: TODO
+  secret: TODO

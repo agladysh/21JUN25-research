@@ -2,7 +2,7 @@
 
 %TAG ! tag:agladysh-research.org,2025:aiq/
 ---
-!<!extends('./system.yaml')>
+!<!extends ./system.yaml>
 
 data:
   env:
@@ -18,10 +18,11 @@ data:
     # TODO: For a librarian reading this will likely be largest performance hog
     #       both on FS and on LLM ingestion (though caching should help there).
     #       Cache FS reads? But measure first! This optimization is future work at best.
+    # TODO: Update to use tagged-templates.ts instead of this stuff.
     files: !typescript | # typescript
-      return `<files root="${ xml.escape(os.pwd) }">${ 
-        os.load_text_files(os.pwd).map( (entry: string) => 
-          `<file path="${ xml.escape(entry.relpath) }">${ xml.cdata(entry.content) }</file>`
+      return `<files root="${ xml.escape(os.pwd) }">${
+        os.load_text_files(os.pwd).map( (entry: string) =>
+          `<file relpath="${ xml.escape(entry.relpath) }">${ xml.cdata(entry.content) }</file>`
         ).join('\n')
       }</files>`;
 
@@ -49,12 +50,12 @@ tools:
         type: string
         required: true
         # TODO: Legacy description text, rewrite from scratch
-        description: !njk | # njk
+        description:
           What do you need to retrieve from the context window, as a concrete request for information
       remarks:
         type: string
         required: false
-        description: !njk | # njk
+        description:
           Your remarks, if required
     do:
       - !genai
@@ -71,7 +72,7 @@ do:
   - !set globals.CONVERSATION:
     - user: !input
         prompt: Enter User message
-  
+
   - !genai
       model: gemini-2.5-pro
       system_instruction: !get data.const.system
@@ -80,8 +81,8 @@ do:
       on_success:
         - !typescript globals.CONVERSATION.push($result);
 
-  - !cli.print | # njk
+  - !print TODO print LLM message
 
   - !goto loop
 
-  - !cli.print Done
+  - !print Done
