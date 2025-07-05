@@ -1,3 +1,5 @@
+// Not tested. Not sure if it will be ever needed. Discard if not.
+
 export type TaggedTemplateArgs = Array<unknown> & { raw: readonly string[] | ArrayLike<string> };
 
 export function isTaggedTemplateArgs(arg0: TaggedTemplateArgs | unknown): arg0 is TaggedTemplateArgs {
@@ -21,22 +23,3 @@ export const wrap = (
     return fn.call(this, str, ...binds, ...subs);
   };
 }
-
-/*
-// TODO: Document properly
-Expected use, something like
-
-let t = [ { a: 1 }, { a: 2 } ];
-
-console.log(`
-<list>${
-  each(item => `<item>${ item.a }</item>`, t, '\n')
-}</list>
-`);
-*/
-// TODO: This is an one-liner, discard this file, and move one-liner to yaml.
-export const each = <T>(
-  template: (item: T) => string,
-  array: Array<T>,
-  sep: string = ''
-) => array.map(template).join(sep);

@@ -11,6 +11,10 @@ os:
       return 'TODO: Implement load_text_files()';
     }
 
+security:
+  secret: !typescript | # typescript
+    return (...) => ...; // TODO: Mark passed value as secret via Proxy or something, to prevent unmasked logging etc.
+
 xml:
   escape: !typescript | # typescript
     return function escape() {
@@ -22,15 +26,23 @@ xml:
       return 'TODO: Implement';
     };
 
+tpl:
+  each: !typescript | # typescript
+    return <T>(
+      template: (item: T) => string,
+      array: Array<T>,
+      sep: string = ''
+    ) => array.map(template).join(sep);
+
 aiq:
   describe: !typescript | # typescript
     return function describe() {
       return 'TODO: Generate a description';
     };
 
-# TODO: Add declarative tests for everything
-# TODO: Define all those tags, whenever possible, declaratively as well.
-#       The idea is, as usual, that everything, but the smallest core is bootstrapped.
-#       Update: We have tags.yaml as a placeholder, however, some tags are to be defined via other tags too,
-#       and belong to higher level aiq stuff, not bootstrapping or system level (e.g. action-tags used in do:).
-#       Figure out the layout.
+  fail: !typescript | # typescript
+    return function fail(...: unknown[]) {
+      throw new Error(...);
+    }
+
+# TODO: Add declarative tests for everything, including tags.
