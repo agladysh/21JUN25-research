@@ -1,7 +1,3 @@
-%TAG ! tag:agladysh-research.org,2025:aiq/
----
-!<!extends ./yaml.yaml'> # TODO Makes little sense in this form. Looks like it has to be a convention.
-
 os:
   pwd: !typescript | # typescript
     return 'TODO: return PWD';

@@ -12,7 +12,7 @@ data:
     GEMINI_API_KEY: !typescript | # typescript
       return security.secret(process.env.GEMINI_API_KEY ?? aiq.fail('GEMINI_API_KEY env variable is required'));
 
-  args: # TODO: Use some nice cli argument management library for this?
+  args: # TODO: Use some nice cli argument management library for this? YAGNI for now.
     prompt: !typescript | # typescript
       return process.argv[1] ?? undefined;
 
@@ -24,7 +24,7 @@ data:
       return `<files root="${ xml.escape(os.pwd) }">${
         tpl.each(
           entry => `<file relpath="${ xml.escape(entry.relpath) }">${ xml.cdata(entry.content) }</file>`,
-          os.load_text_files(os.pwd)
+          os.load_text_files(os.pwd),
           '\n'
         )
       }</files>`;
@@ -64,10 +64,36 @@ tools:
       - !genai
           model: gemini-2.5-pro
           system_instruction: !get data.const.role # TODO: Use something custom-made?
-          # TODO: Finish the implementation, see concept.md
+          history:
+            # TODO: Magical? Figure out how it is best to structure the tool call during the implementation.
+            # TODO: Write a proper prompt here
+            # TODO: Conversation data likely will need dedicated reusable serialization code, given
+            #       the plethora of formatting etc stuff technically possible there these days,
+            #       especially when using a diverse set of LLM vendors / providers. Reuse some 3rd party code.
+            - user: !typescript | # typescript
+                return `
+                  Conversation Data:
+
+                  <data>
+                    <system>${ xml.cdata(data.const.system) }</system>
+                    ${ tpl.each( // TODO: Write user/agent role here as well.
+                      msg => `<message>${ xml.cdata(msg.text) }</message>`, // TODO: This is fake (see data structure). Fix.
+                      globals.CONVERSATION,
+                      '\n'
+                    ) }
+                  </data>
+
+                  Query:
+
+                  ${ $.args.query }${
+                    $.args.remarks ? `\n\nRemarks:\n\n${$.args.remarks}` : ''
+                  }
+                `;
+          on_success: [ ] # TODO: ?! Depends on how $result variable (see below) and tool results are handled.
 
 globals:
-  CONVERSATION: [ ]
+  CONVERSATION: !typescript | # typescript
+    return [ ]; // TODO: Ideally, this would be typed as a genai history-esque array, use a TS-typed object here.
 
 # TODO: We need a non-interactive mode for LLM to use.
 #       Interactive mode is actually redundant for the first implementation,
@@ -78,7 +104,7 @@ do:
   - !set globals.CONVERSATION:
     - user: !input
         prompt: Enter User message
-        default: !get data.args.prompt
+        default: !get data.args.prompt ?? ''
 
   - !genai
       model: gemini-2.5-pro
@@ -86,9 +112,12 @@ do:
       history: !get globals.CONVERSATION
       functions: !get tools
       on_success:
-        - !typescript globals.CONVERSATION.push($result);
+        # TODO: this $result seems magical, might change upon implementation of the !genai tag.
+        - !typescript | # typescript
+          globals.CONVERSATION.push({ model: $result });
 
-  - !print TODO print LLM message
+  - !print !typescript | # typescript
+      return $result; // TODO: ?! Nicer formatting will be required. $result is still magical. Also, why is this not !get then?
 
   - !goto loop
 

@@ -5,8 +5,10 @@
 extends: !typescript | # typescript
   return throw new Error('TODO: Implement');
 
+# TODO: This is alias for !typescript return {...}
 get: !typescript | # typescript
   return throw new Error('TODO: Implement');
 
+# TODO: This is an alias to !typescript, similar to !get
 set: !typescript | # typescript
   return throw new Error('TODO: Implement');

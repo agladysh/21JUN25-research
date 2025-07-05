@@ -1,0 +1,4 @@
+!tagdefs
+
+input: !typescript | # typescript
+  return throw new Error('TODO: Implement');
