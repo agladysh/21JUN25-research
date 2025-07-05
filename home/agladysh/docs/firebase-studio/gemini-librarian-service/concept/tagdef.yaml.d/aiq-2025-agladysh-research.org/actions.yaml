@@ -1,0 +1,13 @@
+!tagdefs
+
+label: !typescript | # typescript
+  return throw new Error('TODO: Implement');
+
+print: !typescript | # typescript
+  return throw new Error('TODO: Implement');
+
+goto: !typescript | # typescript
+  return throw new Error('TODO: Implement');
+
+genai: !typescript | # typescript
+  return throw new Error('TODO: Implement');

@@ -1,0 +1,12 @@
+!tagdefs
+
+# TODO: Meta-descriptions/documentation is a must, find a way to provide these in-line (jsdoc?).
+
+extends: !typescript | # typescript
+  return throw new Error('TODO: Implement');
+
+get: !typescript | # typescript
+  return throw new Error('TODO: Implement');
+
+set: !typescript | # typescript
+  return throw new Error('TODO: Implement');
