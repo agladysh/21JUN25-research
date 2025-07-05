@@ -13,11 +13,8 @@ data:
       return security.secret(process.env.GEMINI_API_KEY ?? aiq.fail('GEMINI_API_KEY env variable is required'));
 
   args: # TODO: Use some nice cli argument management library for this?
-    prompt: !typescript
-
-  # TODO: We need CLI API for LLM to access the thing.
-  # args:
-  #   TBD: TBD
+    prompt: !typescript | # typescript
+      return process.argv[1] ?? undefined;
 
   const:
     # TODO: For a librarian reading this will likely be largest performance hog
@@ -72,12 +69,16 @@ tools:
 globals:
   CONVERSATION: [ ]
 
+# TODO: We need a non-interactive mode for LLM to use.
+#       Interactive mode is actually redundant for the first implementation,
+#       and should be implemented later.
 do:
   - !label loop
 
   - !set globals.CONVERSATION:
     - user: !input
         prompt: Enter User message
+        default: !get data.args.prompt
 
   - !genai
       model: gemini-2.5-pro
